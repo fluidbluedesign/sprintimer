@@ -198,15 +198,17 @@ body {
     }
 
     #mainContainer{
+        margin: 0 auto;
+        max-width: 500px;
         display: grid;
         width: 100vw;
         height: 100vh;
-        grid-template-columns: auto 90vw auto;
+        grid-template-columns: 100vw ;
         grid-template-rows: 10vh 30vh auto;
         grid-template-areas: 
-        ". header ."
-        ". timerSection ."
-        ". notes .";
+        "header"
+        "timerSection"
+        "notes";
         min-height: 0;
         min-width: 0;
         column-gap: 0;
