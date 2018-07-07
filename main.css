@@ -6,7 +6,7 @@ body {
 
 #mainContainer {
     display: grid;
-    width: 100wv;
+    width: 100vw;
     height: 100vh;
     grid-template-columns: auto 40vw 40vw auto;
     grid-template-rows: 15vh 85vh;
@@ -199,7 +199,7 @@ body {
 
     #mainContainer{
         display: grid;
-        width: 100wv;
+        width: 100vw;
         height: 100vh;
         grid-template-columns: auto 90vw auto;
         grid-template-rows: 10vh 30vh auto;
