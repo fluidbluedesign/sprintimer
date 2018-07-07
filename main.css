@@ -209,6 +209,7 @@ body {
         ". notes .";
         min-height: 0;
         min-width: 0;
+        column-gap: 0;
     }
     
     #timerContainer{
