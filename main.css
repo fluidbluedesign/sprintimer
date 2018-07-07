@@ -1,0 +1,254 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+#mainContainer {
+    display: grid;
+    width: 100wv;
+    height: 100vh;
+    grid-template-columns: auto 40vw 40vw auto;
+    grid-template-rows: 15vh 85vh;
+    grid-template-areas: ". header header ."
+    ". notes timerSection .";
+    min-height: 0;
+    min-width: 0;
+    column-gap: 40px;
+}
+
+#titleContainer {
+  grid-area: header;
+  display: flex;
+  overflow: none;
+  margin: 15px 0px;
+}
+
+#crossButton {
+    background-color: #F0F0F0;
+    text-align: center;
+    border-radius: 5px;
+    width:10vw;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+#crossButton a {
+    display: block;
+    font-family: 'Fira Sans', sans-serif;
+    text-decoration: none;
+    font-size: 4vw;
+}
+
+#crossButton a:visited {
+    text-decoration: none;
+}
+#crossButton a:hover {
+    text-decoration: none;
+}
+#crossButton a:active {
+    text-decoration: none;
+}
+
+#title1 {
+    background-color: #F0F0F0;
+    padding-left: 15px;
+    margin-left: 20px;
+    flex-grow: 1;
+    border-radius: 5px;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+#notesContainer {
+    grid-area: notes;
+    background: linear-gradient(135deg, #2b4162 0%,#3C6095 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    margin: 10px 0px;
+    border-radius: 5px;
+    padding: 3vh 1vw;
+    margin-bottom: 30px;
+}
+
+#notes {padding: 0px 15%;}
+  
+#timerContainer {
+    grid-area: timerSection;
+    margin: 10px 0px;
+    border-radius: 5px;
+    font-family: 'Fira Sans', sans-serif;
+    display: flex;
+    flex-flow: column;
+}
+
+#italicText {
+    font-style: italic;
+}
+
+#thickText {
+    font-weight: 500;
+}
+
+
+#notes li{
+    padding: 0;
+    color: #ffffff;
+    font-size: 2.2vw;
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+
+
+
+
+#titleContainer p{
+    display: inline;
+    font-size: 3.5vw;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+
+
+#timer {
+    padding-top: 40px;
+    text-align: center;
+    font-size: 9vw;
+    font-weight: 450;
+    color: #3C6095;
+}
+
+#progressBar{
+    height: 40px;
+    background-color: darkgrey;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+#buttonContainer {
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#pauseButton {
+    background-color: #7DCE82; /* Green */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin: 0px 20px;
+    margin-top: 30px;
+    padding: 25px 25px;
+    text-decoration: none;
+    font-size: 3.5vw;
+    font-weight: 600;
+    letter-spacing: 1.1pt;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+#pauseButton:hover { 
+    background-color: rgb(118, 216, 124);
+}
+
+#skipButton {
+    background-color: #B2B2B2; /* Grey */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin: 0px 20px;
+    margin-top: 30px;
+    padding: 25px 25px;
+    text-decoration: none;
+    font-size: 3.5vw;
+    font-weight: 600;
+    letter-spacing: 1.1pt;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#skipButton:hover { 
+    background-color: rgb(145, 168, 146);
+}
+
+@media only screen and (max-width: 640px) {
+    #notes li{
+        font-size: 5vw;
+    }
+    #notes{
+        margin: 0px 10px;
+        padding: 0px 10%;
+    }
+    #titleContainer {
+    margin: 5px;
+    }
+
+    #titleContainer p{
+        font-size: 4.5vw;
+    }
+
+    #mainContainer{
+        display: grid;
+        width: 100wv;
+        height: 100vh;
+        grid-template-columns: auto 90vw auto;
+        grid-template-rows: 10vh 30vh auto;
+        grid-template-areas: 
+        ". header ."
+        ". timerSection ."
+        ". notes .";
+        min-height: 0;
+        min-width: 0;
+    }
+    
+    #timerContainer{
+        align-content: space-around;
+        justify-content: space-around;
+        margin: 0;
+    }
+    #timer {
+        padding-top: 0px;
+        font-size: 17vw;
+    }
+
+    #progressBar {
+        margin: 0px;
+
+    }
+
+    #buttonContainer {
+        flex-flow: row;
+        height: 30%;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    #pauseButton {
+        margin: 0px;
+        margin-right: 20px;
+        flex-grow: 1;
+        width: 50%;
+        font-size: 3vh;
+        padding: 15px 15px;
+        
+
+    }
+    #skipButton {
+        
+        margin: 0px;
+        flex-grow: 1;
+        width: 50%;
+        font-size: 3vh;
+        padding: 15px 15px;
+    }
+
+}
