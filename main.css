@@ -9,12 +9,17 @@ body {
     width: 100vw;
     height: 100vh;
     grid-template-columns: auto 40vw 40vw auto;
-    grid-template-rows: 15vh 85vh;
+    grid-template-rows: 15vh 80vh 5vh;
     grid-template-areas: ". header header ."
-    ". notes timerSection .";
+    ". notes timerSection ."
+    ". bottomHolder bottomHolder .";
     min-height: 0;
     min-width: 0;
     column-gap: 40px;
+}
+
+#bottomHolder {
+    grid-area: bottomHolder;
 }
 
 #titleContainer {
@@ -207,7 +212,7 @@ body {
         ". header ."
         ". timerSection ."
         ". notes ."
-        ". . .";
+        ". bottomHolder .";
         min-height: 0;
         min-width: 0;
         column-gap: 0;
