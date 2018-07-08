@@ -9,10 +9,9 @@ body {
     width: 100vw;
     height: 100vh;
     grid-template-columns: auto 40vw 40vw auto;
-    grid-template-rows: 15vh 80vh 5vh;
+    grid-template-rows: 15vh 85vh;
     grid-template-areas: ". header header ."
-    ". notes timerSection ."
-    ". bottomHolder bottomHolder .";
+    ". notes timerSection .";
     min-height: 0;
     min-width: 0;
     column-gap: 40px;
@@ -207,7 +206,7 @@ body {
         width: 100vw;
         height: 100vh;
         grid-template-columns: 5vw 90vw 5vw;
-        grid-template-rows: 10vh 30vh auto 10vh;
+        grid-template-rows: 10vh 30vh auto 20vh;
         grid-template-areas: 
         ". header ."
         ". timerSection ."
