@@ -9,9 +9,11 @@
 <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
 <link rel="stylesheet" href="main.css" type="text/css">
 
-<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="head.load.min.js"></script>
 
-<script type="text/javascript" src="easytimer.js"></script>
+<script>
+    head.load("jquery-3.3.1.min.js", "easytimer.js", "firstScript.js")
+</script>
 
 </head>
 
@@ -47,10 +49,10 @@
 <div id="timerContainer">
 
     <div id="timer">
-    00:00:00
     </div>
 
-    <div id="progressBar">
+    <div id="progressBarContainer">
+        <div id="progressBar"></div>
     </div>
 
     <div id="buttonContainer">
@@ -69,5 +71,8 @@
 </div>
 
 
+
 </body>
+
+
 </html>
