@@ -5,22 +5,39 @@
 <title>Set Up</title>
 
 <link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="home.css"
 <script src="setupScript.js"></script>
 
 </head>
 
 <body>
 
-<form>
+<div id="mainContainer">
 
-<input type="number" name="hours" min="0" max="10" step="1" value="1">
-<p>hours</p>
-<input type="number" name="minutes" min="0" max="60" step="10" value="30">
-<p>minutes</p>
+<div id="titleContainer">
+    <div id="title1">
+     <p id="thickText">
+           The Sprintimer</p>
+    </div>
+</div>
+
+<div id="notesContainer">
+    <p id="notes">
+        
+    </p>
+
+</div>
+
+<div id="timerContainer">
+    <textarea rows="1" cols="2" id="hoursInput" >1</textarea>
+    <p>hours</p>
+    <textarea id="minutesInput" rows="1" cols="2">30</textarea>
+    <p>minutes</p>
 
 
-<input id="clickMe" type="button" value="Start timer!" onclick="startEverything();" />
+<input class="primaryButton" id="clickMe" type="button" value="Start timer!" onclick="startEverything();" />
+</div>
 
-</form>
+</div>
 
 </body>

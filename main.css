@@ -14,7 +14,6 @@ body {
     ". notes timerSection .";
     min-height: 0;
     min-width: 0;
-    column-gap: 40px;
 }
 
 #bottomHolder {
@@ -85,6 +84,7 @@ body {
     font-family: 'Fira Sans', sans-serif;
     display: flex;
     flex-flow: column;
+    margin-left: 30px;
 }
 
 #italicText {
@@ -150,12 +150,11 @@ body {
     text-align: center;
 }
 
-#pauseButton {
+.primaryButton {
     background-color: #7DCE82; /* Green */
     border: none;
     border-radius: 5px;
     color: white;
-    margin: 0px 20px;
     margin-top: 30px;
     padding: 25px 25px;
     text-decoration: none;
@@ -177,7 +176,6 @@ body {
     border: none;
     border-radius: 5px;
     color: white;
-    margin: 0px 20px;
     margin-top: 30px;
     padding: 25px 25px;
     text-decoration: none;
@@ -216,15 +214,13 @@ body {
         width: 100vw;
         height: 100vh;
         grid-template-columns: 5vw 90vw 5vw;
-        grid-template-rows: 10vh 30vh auto 20vh;
+        grid-template-rows: 10vh 30vh auto;
         grid-template-areas: 
         ". header ."
         ". timerSection ."
-        ". notes ."
-        ". bottomHolder .";
+        ". notes .";
         min-height: 0;
         min-width: 0;
-        column-gap: 0;
         padding-bottom: 10vh;
     }
     
