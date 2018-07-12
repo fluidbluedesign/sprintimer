@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <title>Set Up</title>
-
+<link rel="stylesheet" href="normalize.css">
 <link rel="stylesheet" href="main.css">
-<link rel="stylesheet" href="home.css"
-<script src="setupScript.js"></script>
+<link rel="stylesheet" href="home.css">
+<script src="startScript.js"></script>
 
 </head>
 
@@ -22,22 +22,29 @@
 </div>
 
 <div id="notesContainer">
-    <p id="notes">
-        
+    <p class="notes">
+        Sprintimer is a tracker and timer for design sprints. 
+    </p> 
+    <p class="notes">   
+        Enter the total time you have and Sprintimer will figure out the rest.
     </p>
 
 </div>
 
 <div id="timerContainer">
-    <textarea rows="1" cols="2" id="hoursInput" >1</textarea>
+    <p>Total Time:</p>
+    <input type="number" rows="1" cols="2" id="hoursInput" value="1">
     <p>hours</p>
-    <textarea id="minutesInput" rows="1" cols="2">30</textarea>
+    <input type="number" id="minutesInput" rows="1" cols="2" value="30">
     <p>minutes</p>
 
 
 <input class="primaryButton" id="clickMe" type="button" value="Start timer!" onclick="startEverything();" />
+
 </div>
 
 </div>
+
+
 
 </body>

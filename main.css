@@ -75,7 +75,7 @@ body {
     margin-bottom: 30px;
 }
 
-#notes {padding: 0px 15%;}
+.notes {padding: 0px 15%;}
   
 #timerContainer {
     grid-area: timerSection;
@@ -96,7 +96,7 @@ body {
 }
 
 
-#notes li{
+.notes li{
     padding: 0;
     color: #ffffff;
     font-size: 2.2vw;
@@ -167,7 +167,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-#pauseButton:hover { 
+.primaryButton:hover { 
     background-color: rgb(118, 216, 124);
 }
 
@@ -194,10 +194,10 @@ body {
 }
 
 @media only screen and (max-width: 640px) {
-    #notes li{
+    .notes li{
         font-size: 5vw;
     }
-    #notes{
+    .notes{
         margin: 0px 10px;
         padding: 0px 10%;
     }
