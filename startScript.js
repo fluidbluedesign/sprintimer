@@ -43,6 +43,6 @@ function splitterFunction(){
     localStorage.setItem("prototypeValue", prototype);
     localStorage.setItem("refineValue", refine);
 
-    window.location = "first.html";
+    window.location = "steps/first.html";
 
 }
