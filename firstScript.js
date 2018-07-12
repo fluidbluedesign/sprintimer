@@ -3,6 +3,7 @@
 var unpackValue = localStorage.getItem("unpackValue");
 console.log(unpackValue);
 var timerValue = parseInt(unpackValue);
+console.log(timerValue);
 if (timerValue == 0) {timerValue = 60; }
 
 
