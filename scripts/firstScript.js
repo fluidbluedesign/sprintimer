@@ -1,3 +1,7 @@
+//set value for next page
+
+var nextPageLocation = "steps/second.html"
+
 //get value for unpack from localstorage and convert into Integer
 
 var unpackValue = localStorage.getItem("unpackValue");
@@ -5,6 +9,7 @@ console.log(unpackValue);
 var timerValue = parseInt(unpackValue);
 console.log(timerValue);
 if (timerValue == 0) {timerValue = 60; }
+
 
 
 
@@ -48,6 +53,9 @@ $('#skipAheadButton').click(function () {
     launchSecTimer();
 });
 
+function launchSecTimer(){
+    window.location = nextPageLocation;
+}
 
 
 
