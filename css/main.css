@@ -263,16 +263,20 @@ body {
         flex-flow: row;
     }
 
-    #pauseButton {
+    .primaryButton {
         margin: 0px;
-        margin-right: 20px;
+        
         flex-grow: 1;
-        width: 50%;
+        
         font-size: 3vh;
         padding: 15px 15px;
-        
-
     }
+
+    #pauseButton{
+        margin-right: 20px;
+        width: 50%;
+    }
+
     #skipButton {
         margin: 0px;
         flex-grow: 1;
@@ -280,5 +284,7 @@ body {
         font-size: 3vh;
         padding: 15px 15px;
     }
+
+    
 
 }

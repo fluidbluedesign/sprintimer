@@ -10,18 +10,19 @@ textarea {
 }
 
 .numberInput {
-    font-size: 6.5vw;
+    font-size: 4.5vw;
     padding: 12px 20px;
     border: none;
     border-radius: 5px; 
     background-color: #F0F0F0;
     box-sizing: border-box;
-    width: 100%;
+    width: 40%;
     size: inherit;
+    text-align: center;
 }
 
-#notesContainer p {
-    color: #ffffff;
+p {
+   
     font-size: 2.2vw;
     font-family: 'Fira Sans', sans-serif;
     line-height: 1.5;
@@ -30,13 +31,31 @@ textarea {
 
 #notesContainer {
     background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(246,95,99,1) 0%, rgba(223,97,142,1) 90.1% );
-}
-
-#inputContainer {
-    display: flex;
+    color: #ffffff;
 }
 
 .singleInputContainer {
-    margin: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
 }
 
+.formText {
+    margin: 0;
+    padding: 0;
+        margin-left: 20px;
+        font-size: 4.5vw;
+}
+
+
+
+#buttonContainer{
+    flex-flow: column;
+}
+
+@media only screen and (max-width: 640px) {
+    .notes{
+        font-size: 5vw;
+    }
+}

@@ -1,55 +1,60 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<title>Set Up</title>
-<link rel="stylesheet" href="css/normalize.css">
-<link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="css/home.css">
-<script src="startScript.js"></script>
+    <meta charset="UTF-8">
+    <title>Set Up</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script src="startScript.js"></script>
 
 </head>
 
 <body>
 
-<div id="mainContainer">
+    <div id="mainContainer">
 
-<div id="titleContainer">
-    <div id="title1">
-     <p id="thickText">
-           The Sprintimer</p>
-    </div>
-</div>
-
-<div id="notesContainer">
-    <p class="notes">
-        Sprintimer is a tracker and timer for design sprints. 
-    </p> 
-    <p class="notes">   
-        Enter the total time you have and Sprintimer will figure out the rest.
-    </p>
-
-</div>
-
-<div id="timerContainer">
-    <div id="inputContainer">
-        <div class="singleInputContainer">
-            <input class="numberInput" type="number" id="hoursInput" value="1">
-            <p>hours</p>
+        <div id="titleContainer">
+            <div id="title1">
+                <p id="thickText">
+                    The Sprintimer</p>
+            </div>
         </div>
-        <div class="singleInputContainer">
-            <input class="numberInput" type="number" id="minutesInput" value="30">
-            <p>minutes</p>
+
+        <div id="notesContainer">
+            <p class="notes">
+                Sprintimer is a tracker and timer for design sprints.
+            </p>
+            <p class="notes">
+                Enter the total time you have and Sprintimer will figure out the rest.
+            </p>
+
         </div>
+
+        <div id="timerContainer">
+            <div id="topArea">
+                
+                    <div class="singleInputContainer">
+                        <input class="numberInput" type="number" id="hoursInput" value="1">
+                        <p class="formText">hours</p>
+                    </div>
+                    <div class="singleInputContainer">
+                        <input class="numberInput" type="number" id="minutesInput" value="30">
+                        <p class="formText">minutes</p>
+                    </div>
+                
+
+            </div>
+
+            <div id="bottomArea">
+                <div id="buttonContainer">
+                <input class="primaryButton" id="clickMe" type="button" value="Start timer!" onclick="startEverything();" />
+            </div>
+            </div>
+        </div>
+
     </div>
-   
-
-
-<input class="primaryButton" id="clickMe" type="button" value="Start timer!" onclick="startEverything();" />
-
-</div>
-
-</div>
 
 
 
