@@ -60,9 +60,13 @@ $('#skipAheadButton').click(function () {
 });
 
 function launchNextTimer(){
-    window.location = nextPageLocation;
+    $('#mainContainer').addClass('fadeOut');
+    setTimeout(launchWindowLocation, 200);
 }
 
+function launchWindowLocation(){
+    window.location = nextPageLocation;
+}
 
 
 //updates progress bar
