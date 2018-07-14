@@ -13,7 +13,7 @@ textarea {
     font-size: 4.5vw;
     padding: 12px 20px;
     border: none;
-    border-radius: 5px; 
+    border-radius: 5px;
     background-color: #F0F0F0;
     box-sizing: border-box;
     width: 40%;
@@ -22,7 +22,6 @@ textarea {
 }
 
 p {
-   
     font-size: 2.2vw;
     font-family: 'Fira Sans', sans-serif;
     line-height: 1.5;
@@ -30,7 +29,7 @@ p {
 }
 
 #notesContainer {
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(246,95,99,1) 0%, rgba(223,97,142,1) 90.1% );
+    background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(246, 95, 99, 1) 0%, rgba(223, 97, 142, 1) 90.1%);
     color: #ffffff;
 }
 
@@ -44,18 +43,16 @@ p {
 .formText {
     margin: 0;
     padding: 0;
-        margin-left: 20px;
-        font-size: 4.5vw;
+    margin-left: 20px;
+    font-size: 4.5vw;
 }
 
-
-
-#buttonContainer{
+#buttonContainer {
     flex-flow: column;
 }
 
 @media only screen and (max-width: 640px) {
-    .notes{
+    .notes {
         font-size: 5vw;
     }
 }
