@@ -197,7 +197,7 @@ body {
     background-color: rgb(145, 168, 146);
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 640px) {
     .notes li{
         font-size: 5vw;
     }
