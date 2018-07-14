@@ -1,7 +1,7 @@
 
 var timerValue = parseInt(dividedValue);
 console.log(timerValue);
-if (timerValue == 0) {timerValue = 60; }
+if (timerValue == 0) {timerValue = 60; };
 
 
 
@@ -24,15 +24,14 @@ firstTimer.addEventListener('secondsUpdated', function (e) {
     $('#timerContainer #timer').html(firstTimer.getTimeValues().toString());
 });
 
-firstTimer.addEventListener('secondTenthsUpdated', function (e) {
+firstTimer.addEventListener('secondsUpdated', function (e) {
     //runs the progress bar updater every second
     progressBarUpdater();
 });
 
 firstTimer.addEventListener('targetAchieved', function (e) {
     //reset the currentTicker and update the progress bar
-    currentTicker = 0;
-    progressBarUpdater();
+    actualBar.style.width = "0%";
     launchNextTimer();
     //launch notification sound
     audioAlert();
@@ -74,7 +73,7 @@ function progressBarUpdater(){
     
     //updates currentTicker every second
     if (currentTicker < timerValue){
-    currentTicker = currentTicker + 0.1;
+    currentTicker = currentTicker + 1;
     }
     
     var progBarPerc = (currentTicker/timerValue)*100;
