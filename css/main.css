@@ -205,7 +205,7 @@ body {
         padding: 0px 10%;
     }
     #titleContainer {
-        margin: 5px;
+        margin: 5px 0px;
     }
     #titleContainer p {
         font-size: 4.5vw;
@@ -222,6 +222,7 @@ body {
         padding-bottom: 10vh;
     }
     #bottomArea {
+        padding-top: 5px;
         display: flex;
         flex-flow: column;
         justify-content: center;
