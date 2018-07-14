@@ -249,8 +249,13 @@ body {
         font-size: 17vw;
     }
 
+    #progressBarContainer {
+        height: 25px;
+    }
+
     #progressBar {
         margin: 0px;
+        height: 25px;
     }
 
     #buttonContainer {
