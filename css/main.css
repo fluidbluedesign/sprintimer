@@ -282,9 +282,3 @@ body {
     }
 
 }
-
-@media only screen and (max-height: 768px) {
-    #mainContainer {
-        height: 768px;
-    }
-}
