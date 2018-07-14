@@ -5,14 +5,14 @@
 <title>The Sprintimer</title>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<link rel="stylesheet" href="normalize.css" type="text/css">
-<link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
-<link rel="stylesheet" href="main.css" type="text/css">
+<link rel="stylesheet" href="../css/normalize.css" type="text/css">
+<link rel="stylesheet" href="../css/https://code.cdn.mozilla.net/fonts/fira.css">
+<link rel="stylesheet" href="../css/main.css" type="text/css">
 
-<script type="text/javascript" src="head.load.min.js"></script>
+<script type="text/javascript" src="../head.load.min.js"></script>
 
 <script>
-    head.load("../jquery-3.3.1.min.js", "../easytimer.js", "scripts/secondScript.js")
+    head.load("../jquery-3.3.1.min.js", "../easytimer.js", "../scripts/secondScript.js", "../scripts/timerScript.js");
 </script>
 
 </head>
@@ -22,12 +22,12 @@
 <div id="mainContainer">
 <div id="titleContainer">
     <div id="crossButton">
-        <a href="index.html">x</a>
+        <a href="../index.html">╳</a>
     </div>
     <div id="title1">
         <div>
-        <p id="italicText" >Step 1:   </p>
-        <p id="thickText">Unpacking the Problem</p>
+        <p id="italicText" >Step 2:   </p>
+        <p id="thickText">Research + Understanding</p>
     </div>
     </div>
     
@@ -35,12 +35,11 @@
 
 <div id="notesContainer">
     <ol class="notes">
-        <li>Introduction to the brief</li>
-        <li>Define and record the problems</li>
-        <li>Define the environment, situation or format</li>
-        <li>Knowledge share</li>
-        <li>Reframe the brief and set priority objectives</li>
-        <li>Understand the brief (summary / shared vision)</li>
+        <li>Formulate team and delegate tasks</li>
+        <li>Initiate basic strategy</li>
+        <li>Begin Research</li>
+        <li>Outline requirements and questions</li>
+        <li>Collect data</li>
     </ol>
 </div>
 
@@ -57,7 +56,7 @@
 
     <div id="buttonContainer">
         <input type="button" id="pauseButton" class="primaryButton" value="pause" />
-        <input type="button" id="skipButton" value="skip ahead" />
+        <input type="button" id="skipButton" value="skip ahead" onclick="launchNextTimer();"/>
     </div>
 
     
@@ -70,5 +69,10 @@
 
 </body>
 
+<style>
+        #notesContainer {
+    background: linear-gradient(135deg, #00537E 0%,#3AA17E 100%);
+    }
+    </style>
 
 </html>

@@ -5,14 +5,14 @@
 <title>The Sprintimer</title>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<link rel="stylesheet" href="normalize.css" type="text/css">
-<link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
-<link rel="stylesheet" href="main.css" type="text/css">
+<link rel="stylesheet" href="../css/normalize.css" type="text/css">
+<link rel="stylesheet" href="../css/https://code.cdn.mozilla.net/fonts/fira.css">
+<link rel="stylesheet" href="../css/main.css" type="text/css">
 
-<script type="text/javascript" src="head.load.min.js"></script>
+<script type="text/javascript" src="../head.load.min.js"></script>
 
 <script>
-    head.load("jquery-3.3.1.min.js", "easytimer.js", "firstScript.js")
+    head.load("../jquery-3.3.1.min.js", "../easytimer.js", "../scripts/thirdScript.js", "../scripts/timerScript.js");
 </script>
 
 </head>
@@ -22,12 +22,12 @@
 <div id="mainContainer">
 <div id="titleContainer">
     <div id="crossButton">
-        <a href="index.html">x</a>
+        <a href="../index.html">╳</a>
     </div>
     <div id="title1">
         <div>
-        <p id="italicText" >Step 1:   </p>
-        <p id="thickText">Unpacking the Problem</p>
+        <p id="italicText" >Step 3:   </p>
+        <p id="thickText">Synthesize + Reframe</p>
     </div>
     </div>
     
@@ -35,12 +35,11 @@
 
 <div id="notesContainer">
     <ol class="notes">
-        <li>Introduction to the brief</li>
-        <li>Define and record the problems</li>
-        <li>Define the environment, situation or format</li>
-        <li>Knowledge share</li>
-        <li>Reframe the brief and set priority objectives</li>
-        <li>Understand the brief (summary / shared vision)</li>
+        <li>Review obtained requirements</li>
+        <li>Share, organize, and debate newly acquired knowledge</li>
+        <li>Redefine and identify achievable goal markers</li>
+        <li>Plan new outcomes/desirables</li>
+        <li>Reframe the problem space/brief</li>
     </ol>
 </div>
 
@@ -70,5 +69,10 @@
 
 </body>
 
+<style>
+        #notesContainer {
+    background: linear-gradient(135deg, #8E78FF 0%,#FC7D7B 100%);
+    }
+    </style>
 
 </html>

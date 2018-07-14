@@ -1,10 +1,8 @@
-//get value for unpack from localstorage and convert into Integer
 
-var unpackValue = localStorage.getItem("unpackValue");
-console.log(unpackValue);
-var timerValue = parseInt(unpackValue);
+var timerValue = parseInt(dividedValue);
 console.log(timerValue);
 if (timerValue == 0) {timerValue = 60; }
+
 
 
 
@@ -34,7 +32,7 @@ firstTimer.addEventListener('targetAchieved', function (e) {
     //reset the currentTicker and update the progress bar
     currentTicker = 0;
     progressBarUpdater();
-    launchSecTimer();
+    launchNextTimer();
     //launch notification sound
     audioAlert();
 });
@@ -45,9 +43,12 @@ $('#pauseButton').click(function () {
 
 $('#skipAheadButton').click(function () {
     firstTimer.pause();
-    launchSecTimer();
+    launchNextTimer();
 });
 
+function launchNextTimer(){
+    window.location = nextPageLocation;
+}
 
 
 
