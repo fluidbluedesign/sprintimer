@@ -55,4 +55,13 @@ p {
     .notes {
         font-size: 5vw;
     }
+
+    .formText {
+        font-size: 5vw;
+    }
+
+    .numberInput{
+        font-size: 5vw;
+    }
+    
 }
