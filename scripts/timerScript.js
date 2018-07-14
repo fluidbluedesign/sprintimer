@@ -13,6 +13,7 @@ var currentTicker = 1;
 var actualBar = document.getElementById("progressBar");
 var totalTimeCount = document.getElementById("totalTime");
 
+
 //first timer
 
 //assign firsttimerseconds to current timer
@@ -38,7 +39,19 @@ firstTimer.addEventListener('targetAchieved', function (e) {
 });
 
 $('#pauseButton').click(function () {
-    firstTimer.pause();
+    var pauseButtonObject = document.getElementById("pauseButton");
+    if (pauseButtonObject.value == "pause") {
+        firstTimer.pause();
+        pauseButtonObject.setAttribute("value", "resume");
+    }
+
+    else {
+        firstTimer.start();
+        pauseButtonObject.setAttribute("value", "pause");
+    };
+    
+    
+    
 });
 
 $('#skipAheadButton').click(function () {
