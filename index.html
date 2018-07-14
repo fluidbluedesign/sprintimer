@@ -32,11 +32,17 @@
 </div>
 
 <div id="timerContainer">
-    <p>Total Time:</p>
-    <input type="number" rows="1" cols="2" id="hoursInput" value="1">
-    <p>hours</p>
-    <input type="number" id="minutesInput" rows="1" cols="2" value="30">
-    <p>minutes</p>
+    <div id="inputContainer">
+        <div class="singleInputContainer">
+            <input class="numberInput" type="number" id="hoursInput" value="1">
+            <p>hours</p>
+        </div>
+        <div class="singleInputContainer">
+            <input class="numberInput" type="number" id="minutesInput" value="30">
+            <p>minutes</p>
+        </div>
+    </div>
+   
 
 
 <input class="primaryButton" id="clickMe" type="button" value="Start timer!" onclick="startEverything();" />

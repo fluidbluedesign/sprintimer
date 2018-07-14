@@ -9,14 +9,15 @@ textarea {
     padding: 12px 20px;
 }
 
-input {
-    font-size: 3.5em;
+.numberInput {
+    font-size: 6.5vw;
     padding: 12px 20px;
     border: none;
     border-radius: 5px; 
     background-color: #F0F0F0;
-    width: 100%;
     box-sizing: border-box;
+    width: 100%;
+    size: inherit;
 }
 
 #notesContainer p {
@@ -29,5 +30,13 @@ input {
 
 #notesContainer {
     background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(246,95,99,1) 0%, rgba(223,97,142,1) 90.1% );
+}
+
+#inputContainer {
+    display: flex;
+}
+
+.singleInputContainer {
+    margin: 20px;
 }
 
