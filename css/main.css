@@ -206,6 +206,7 @@ body {
     }
     #titleContainer {
         margin: 5px 0px;
+        padding-top: 10px;
     }
     #titleContainer p {
         font-size: 4.5vw;
